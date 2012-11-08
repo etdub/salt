@@ -342,6 +342,22 @@
 
 #####     Range Cluster settings     #####
 ##########################################
-# The range server (and optional port) that
-# serves your cluster information
-#range_server: range:80
+# The range server (and optional port) that serves your cluster information
+# https://github.com/grierj/range/wiki/Introduction-to-Range-with-YAML-files
+#
+# range_server: range:80
+
+#####     Master Whitelist            #####
+###########################################
+# Control the commands that may be executed on the master.  This is
+# easily bypassed, but it keeps casual users (sometimes the most
+# dangerous ones) from doing something stupid.
+#
+# A whitelist looks like:
+# whitelist:
+#   'cmd\..*':
+#     - user1
+#     - user2
+#     - user3
+#   test.ping:
+#     - '.*'
