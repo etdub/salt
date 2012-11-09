@@ -1044,7 +1044,7 @@ class LocalClient(object):
             if self.salt_user:
                 if not self.__check_whitelist(fun):
                     err = ('You do not have permissions to run this function. '
-                    'Please contact your local administrator if you blieve '
+                    'Please contact your local administrator if you believe '
                     'this is in error.\n')
                     sys.stderr.write(err)
                     sys.exit(2)
